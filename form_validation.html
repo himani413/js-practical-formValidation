@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="js/form_validation.js"></script>
+    </head>
+    <body>
+        <p id="errorMessage" style="color:red"></p> <!--use to display some text when some condition became thrue.-->
+        <form name="loginForm" onsubmit=" return validateForm()" action="">
+            <label id="usernameLabel" for="username">Username</label>
+            <input name="username" type="text" onchange="validateUsername()"><!--in onchamge event, it does the changes the element when the user exit from it after changing it.-->
+            <label for="password">password</label> <!--onkeydown can use to validate some input at the time when it is typed.-->
+            <input name="password" type="password">
+
+            <button type="submit">Login</button> <!--the submit type means when user clicks the button the form is submited-->
+        </form>
+    </body>
+</html>
