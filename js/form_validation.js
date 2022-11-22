@@ -37,6 +37,7 @@ function validateForm(){
     if(username.length >=4 && password.length >=5){
 
         submitForm();
+        return true;
     }
 }
 
@@ -51,7 +52,7 @@ function validateUsername(){
 
     if(username && username.length > 4){
         document.getElementById('usernameLabel').style.color = 'blue';
-        return true;
+        
     }else{
         document.getElementById('usernameLabel').style.color = 'red';  
     }
